@@ -140,7 +140,7 @@ def get_train_cli_arg_parser():
     parser.add_argument(
         model_param_name,
         type=str,
-        default= "simpleHGN",
+        default= "LeeV",
         help="GNN model type to train.",
     )
     parser.add_argument(
