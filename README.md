@@ -10,7 +10,7 @@ In recent years, deep learning-based methods to detect vulnerabilities have been
 
 ## Contents
 1. [Dataset](#Dataset)
-2. [Code Property Graph](#Code Property Graph)
+2. [Code Property Graph](#Code-Property-Graph)
 3. [Preprocessing](#Preprocessing)
 4. [Requirement](#Requirement)
 5. [Code](#Code)
