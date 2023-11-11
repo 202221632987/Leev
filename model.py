@@ -60,7 +60,7 @@ class LeeV(BaseModel):
                     residual,
                     self.activation,
                     alpha=alpha,
-                ).to("cuda:0" if torch.cuda.is_available() else "cpu")
+                )
             )
         self.gat_layers_cdfg.append(
             myGATConv(
@@ -75,7 +75,7 @@ class LeeV(BaseModel):
                 residual,
                 None,
                 alpha=alpha,
-            ).to("cuda:0" if torch.cuda.is_available() else "cpu")
+            )
         )
         self.register_buffer("epsilon", torch.FloatTensor([1e-12]))
         self.score_mlp = MLP(input_dim=128)
