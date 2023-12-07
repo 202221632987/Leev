@@ -94,9 +94,9 @@ def run_epoch_train(dataset,model,optimizer,criterion):
         out_put = model(g)
         target = get_target(g)
         loss = criterion(out_put,target)
+        optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-        optimizer.zero_grad()
         epoch_loss += loss.data
         TN, TP, FP, FN = compute_metrics(out_put, target)
         tn+= TN
