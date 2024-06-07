@@ -1,10 +1,10 @@
-A Learnable Edge-type Embedding Model for Vulnerability Detection
+Vulnerability Detection with Feature Fusion and Learnable Edge-type Embedding Graph Neural Network
 
-<p aligh="center"> This repository contains the code and data for <b>A Learnable Edge-type Embedding Model for Vulnerability Detection</b> </p>
+<p aligh="center"> This repository contains the code and data for <b>Vulnerability Detection with Feature Fusion and Learnable Edge-type Embedding Graph Neural Network</b> </p>
 
 ## Introduction
 
-In recent years, deep learning-based methods to detect vulnerabilities have been widely used to improve Software security. These methods usually extract structural information, such as code property graphs from source code, and use neural networks, such as graph neural networks (GNNs), to learn the graph representation. However, these methods, while useful, do not account for the heterogeneous relationships that exist between edges and node types in code property graphs thus reducing graph representation learning performance. Moreover, existing models suffer from feature fusion deficiency, hindering them from fully aggregating node features to obtain the overall features of the graph. To address these issues, the paper proposes a vulnerability detection network named LeeV. LeeV uses a graph attention neural network with learnable edge embedding to capture edge heterogeneity and incorporates a virtual node connected to all nodes to achieve feature fusion. We evaluated LeeV on three publicly available C/C++ code vulnerability datasets, and the experimental results demonstrated that the F1 score improved by 1.63%, 23.05%, and 13.11%, compared to the best baseline results.
+Deep learning methods are widely employed in vulnerability detection, and graph neural networks have shown effectiveness in learning source code representation. However, current methods overlook non-relevant noise information in the code property graph and lack specific graph neural networks designed for code property graph.To address these issues, this paper introduces Leev, an automated vulnerability detection method. We developed a graph neural network tailored to the code property graph, assigning iterative vectors to diverse edge types and integrating them into the message passing between nodes to enable the model to extract hidden vulnerability information.In addition, virtual nodes are incorporated into the graph for feature fusion, mitigating the impact of irrelevant features on vulnerability information within the code.Specifically, for the FFMPeg+Qemu, Reveal, and Fan et al. datasets, the F1 metrics exhibited improvements of 7.02\%, 21.69\%, and 27.74\% over the best baseline, correspondingly.lts.
 
 ----------
 
