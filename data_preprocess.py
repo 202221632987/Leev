@@ -127,7 +127,7 @@ def Split(train, valid, test, path):
     ratio = len_nonvul / len_vul
     print("vul: " + str(len_vul) + " non_vul: " + str(len_nonvul) + " ratio: " + str(ratio))
     vul_partition = int(train * len_vul)
-    train_list = vul_list[:vul_partition] + nonvul_list[:vul_partition] # 下采样
+    train_list = vul_list[:vul_partition] + nonvul_list[:vul_partition]
     random.shuffle(train_list)
     non_vul_valid = int(int(0.1 * len_vul) * ratio)
     valid_list = vul_list[vul_partition:vul_partition + int(0.1 * len_vul)] + nonvul_list[
